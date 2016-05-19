@@ -1,0 +1,49 @@
+
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6" style="background-color:transparent;">
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li> <a [routerLink]="['/HomeView']">Home</a></li>
+                            <li> <a [routerLink]="['/Tabs']">Tabs</a></li>
+                            <li> <a [routerLink]="['/Modal']">Modal</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+</div>
+
+<br/><br/><br/>
+<router-outlet></router-outlet>
+
+
+        <hr />
+        <footer>
+
+            <table style="width:100%; background-color:transparent;">
+
+                <tr>
+                    <td style="text-align:center">
+                        <p class="admir-h3" style="color:wheat">&copy; {{_today | date:'yyyy'}} - Admir Digital</p>
+                    </td>
+                </tr>
+            </table>
+
+        </footer>
